@@ -51,119 +51,26 @@ $(function () {
   var H22 = [$("#hour-22"), dayjs().hour(22), $("#hour-22 > button"), $("#hour-22 > textarea")]
   var H23 = [$("#hour-23"), dayjs().hour(23), $("#hour-23 > button"), $("#hour-23 > textarea")]
   
-  Timecolor()
-
-
   //Time Handleing
-  function Timecolor(){
-    if (Today.isBefore(H0[1]) === true) {console.log("its before 12"), H0[0].addClass("future")}
-    else if (Today.isSame(H0[1]) === true) {console.log("it is H0"), H0[0].addClass("present")}
-    else {console.log("its after 12"), H0[0].addClass("past")};
-  
-    if (Today.isBefore(H1[1]) === true) {console.log("its before H1"), H1[0].addClass("future")}
-    else if (Today.isSame(H1[1]) === true) {console.log("it is H1"), H1[0].addClass("present")}
-    else {console.log("its after H1"), H1[0].addClass("past")};
-  
-    if (Today.isBefore(H2[1]) === true) {console.log("its before H2"), H2[0].addClass("future")}
-    else if (Today.isSame(H2[1]) === true) {console.log("it is H2"), H2[0].addClass("present")}
-    else {console.log("its after H2"), H2[0].addClass("past")};
-  
-    if (Today.isBefore(H3[1]) === true) {console.log("its before H3"), H3[0].addClass("future")}
-    else if (Today.isSame(H3[1]) === true) {console.log("it is H3"), H3[0].addClass("present")}
-    else {console.log("its after H3"), H3[0].addClass("past")};
-  
-    if (Today.isBefore(H4[1]) === true) {console.log("its before H4"), H4[0].addClass("future")}
-    else if (Today.isSame(H4[1]) === true) {console.log("it is H4"), H4[0].addClass("present")}
-    else {console.log("its after H4"), H4[0].addClass("past")};
-  
-    if (Today.isBefore(H5[1]) === true) {console.log("its before H5"), H5[0].addClass("future")}
-    else if (Today.isSame(H5[1]) === true) {console.log("it is H5"), H5[0].addClass("present")}
-    else {console.log("its after H5"), H5[0].addClass("past")};
-  
-    if (Today.isBefore(H6[1]) === true) {console.log("its before H6"), H6[0].addClass("future")}
-    else if (Today.isSame(H6[1]) === true) {console.log("it is H6"), H6[0].addClass("present")}
-    else {console.log("its after H6"), H6[0].addClass("past")};
-  
-    if (Today.isBefore(H7[1]) === true) {console.log("its before H7"), H7[0].addClass("future")}
-    else if (Today.isSame(H7[1]) === true) {console.log("it is H7"), H7[0].addClass("present")}
-    else {console.log("its after H7"), H7[0].addClass("past")};
-  
-    if (Today.isBefore(H8[1]) === true) {console.log("its before H8"), H8[0].addClass("future")}
-    else if (Today.isSame(H8[1]) === true) {console.log("it is H8"), H8[0].addClass("present")}
-    else {console.log("its after H8"), H8[0].addClass("past")};
-  
-    if (Today.isBefore(H9[1]) === true) {console.log("its before H9"), H9[0].addClass("future")}
-    else if (Today.isSame(H9[1]) === true) {console.log("it is H9"), H9[0].addClass("present")}
-    else {console.log("its after H9"), H9[0].addClass("past")};
-  
-    if (Today.isBefore(H10[1]) === true) {console.log("its before H10"), H10[0].addClass("future")}
-    else if (Today.isSame(H10[1]) === true) {console.log("it is H10"), H10[0].addClass("present")}
-    else {console.log("its after H10"), H10[0].addClass("past")};
-  
-    if (Today.isBefore(H11[1]) === true) {console.log("its before H11"), H11[0].addClass("future")}
-    else if (Today.isSame(H11[1]) === true) {console.log("it is H11"), H11[0].addClass("present")}
-    else {console.log("its after H11"), H11[0].addClass("past")};
-  
-    if (Today.isBefore(H12[1]) === true) {console.log("its before H12"), H12[0].addClass("future")}
-    else if (Today.isSame(H12[1]) === true) {console.log("it is H12"), H12[0].addClass("present")}
-    else {console.log("its after H12"), H12[0].addClass("past")};
-  
-    if (Today.isBefore(H13[1]) === true) {console.log("its before H13"), H13[0].addClass("future")}
-    else if (Today.isSame(H13[1]) === true) {console.log("it is H13"), H13[0].addClass("present")}
-    else {console.log("its after H13"), H13[0].addClass("past")};
-  
-    if (Today.isBefore(H14[1]) === true) {console.log("its before H14"), H14[0].addClass("future")}
-    else if (Today.isSame(H14[1]) === true) {console.log("it is H14"), H14[0].addClass("present")}
-    else {console.log("its after H14"), H14[0].addClass("past")};
-  
-    if (Today.isBefore(H15[1]) === true) {console.log("its before H15"), H15[0].addClass("future")}
-    else if (Today.isSame(H15[1]) === true) {console.log("it is H15"), H15[0].addClass("present")}
-    else {console.log("its after H15"), H15[0].addClass("past")};
-  
-    if (Today.isBefore(H16[1]) === true) {console.log("its before H16"), H16[0].addClass("future")}
-    else if (Today.isSame(H16[1]) === true) {console.log("it is H16"), H16[0].addClass("present")}
-    else {console.log("its after H16"), H16[0].addClass("past")};
-    
-    if (Today.isSame(H17[1]) === true) {console.log("it is H17"), H17[0].addClass("present")}
-    else if (Today.isBefore(H17[1]) === true) {console.log("its before H17"), H17[0].addClass("future")}
-    else {console.log("its after H17"), H17[0].addClass("past")};
-  
-    if (Today.isBefore(H18[1]) === true) {console.log("its before H18"), H18[0].addClass("future")}
-    else if (Today.isSame(H18[1]) === true) {console.log("it is H18"), H18[0].addClass("present")}
-    else {console.log("its after H18"), H18[0].addClass("past")};
-  
-    if (Today.isBefore(H19[1]) === true) {console.log("its before H19"), H19[0].addClass("future")}
-    else if (Today.isSame(H19[1]) === true) {console.log("it is H19"), H19[0].addClass("present")}
-    else {console.log("its after H19"), H19[0].addClass("past")};
-  
-    if (Today.isBefore(H20[1]) === true) {console.log("its before H20"), H20[0].addClass("future")}
-    else if (Today.isSame(H20[1]) === true) {console.log("it is H20"), H20[0].addClass("present")}
-    else {console.log("its after H20"), H20[0].addClass("past")};
-  
-    if (Today.isBefore(H21[1]) === true) {console.log("its before H21"), H21[0].addClass("future")}
-    else if (Today.isSame(H21[1]) === true) {console.log("it is H21"), H21[0].addClass("present")}
-    else {console.log("its after H21"), H21[0].addClass("past")};
-  
-    if (Today.isBefore(H22[1]) === true) {console.log("its before H22"), H22[0].addClass("future")}
-    else if (Today.isSame(H22[1]) === true) {console.log("it is H22"), H22[0].addClass("present")}
-    else {console.log("its after H22"), H22[0].addClass("past")};
-  
-    if (Today.isBefore(H23[1]) === true) {console.log("its before H23"), H23[0].addClass("future")}
-    else if (Today.isSame(H23[1]) === true) {console.log("it is H23"), H23[0].addClass("present")}
-    else {console.log("its after H23"), H23[0].addClass("past")};
-  }
 
+  for (var i = 0; i <= 23; i++) {
+    var times = ["H0", "H1", "H2", "H3", "H4", "H5", "H6", "H7", "H8", "H9", "H10", "H11", "H12", "H13", "H14", "H15", "H16", "H17", "H18", "H19", "H20", "H21", "H22", "H23", ]
+       if (Today.isSame(eval(times[i])[1]) === true) {console.log("it is " + times[i]), eval(times[i])[0].addClass("present")}
+      else if (Today.isBefore(eval(times[i])[1]) === true) {console.log("its before " + times[i]), eval(times[i])[0].addClass("future")}
+      else {console.log("its after "  + times[i]), eval(times[i])[0].addClass("past")};
+   };
 
-  //Save handling
+  
+   //Save handling
 
   for (var i = 0; i <= 23; i++) {
     var times = ["H0", "H1", "H2", "H3", "H4", "H5", "H6", "H7", "H8", "H9", "H10", "H11", "H12", "H13", "H14", "H15", "H16", "H17", "H18", "H19", "H20", "H21", "H22", "H23", ]
   
-     //localStorage.setItem(times[i], i)
     eval(times[i])[3].val(localStorage.getItem(times[i]))
 
   }
 
+  //click handleing
 
   H0[2].click(function () {localStorage.setItem("H0", H0[3].val())})
   H1[2].click(function () {localStorage.setItem("H1", H1[3].val())})
