@@ -20,6 +20,6 @@ Riven Loya: Main work and implementation
 
 ## Screenshot
 
-![screenshot of webpage](/Images/Untitled.png?raw=true " ")
+![screenshot of webpage](/Assets/Images/Untitled.png?raw=true " ")
 
 
